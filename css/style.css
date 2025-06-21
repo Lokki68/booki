@@ -13,6 +13,10 @@
   color: var(--main-color);
 }
 
+.test_zone {
+  border: 1px solid red;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -74,6 +78,33 @@ body {
 .nav-button:hover a {
   color: var(--main-color);
 }
+
+.search_band {
+  width: 100%;
+}
+
+.title_zone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+.title_zone h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+
+.title_zone p {
+  margin: 0;
+}
+
+
+
+.search_zone {}
+
+.filter_zone {}
 
 .main-container {
   width: 100%;
