@@ -14,20 +14,22 @@
 }
 
 body {
+  margin: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 80px;
+  padding: 0 50px;
 }
 
 .header .logo {
-  padding: 30px 50px;
+  padding: 30px 50px 30px 0;
   max-width: 170px;
 }
 
@@ -181,6 +183,39 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .header .logo {
+    padding: 30px 50px;
+  }
+
+  .header .navigation {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .navigation .nav-button {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-button .border {
+    background-color: var(--main-bg-color);
+    opacity: 1;
+  }
+
+  .nav-button:hover .border {
+    background-color: var(--main-color);
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
